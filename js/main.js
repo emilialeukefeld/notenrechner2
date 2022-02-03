@@ -7,6 +7,8 @@ let summe = 0;
 let anzahlNoten = 0;
 let ergebnis;
 
+//noten auslesen
+
 
 function tfAuslesen(){
     anzahlNoten=0
@@ -28,6 +30,8 @@ function tfAuslesen(){
     ergebnis = summe/anzahlNoten;
 
     document.getElementById("ausgabe").innerHTML = ergebnis;
+
+    //Farbänderung je nach Punkzahl
 
     if (ergebnis < 6) {document.getElementById("ausgabe").style.color = "crimson"}
     else {document.getElementById("ausgabe").style.color = "orange"}
